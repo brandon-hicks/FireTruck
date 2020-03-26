@@ -15,12 +15,12 @@ namespace FireTruck.Models
 
         public FireTruck()
         {
-            hoseSize = HoseSizes.InchAndThreeQuarter;
+            hoseSize = 1.5;
             hoseLength = 200;
             nozzle = Nozzle.SmoothBoreHand;
             appliance = false;
             pumpDischargePressure = CalculatePumpDischargePressure();
-            tipSize = TipSizes.SevenEights;
+            tipSize = 0.88;
             gallonsPerMinute = CalculateGpm();
         }
 
@@ -31,12 +31,12 @@ namespace FireTruck.Models
 
         public double CalculateGpm()
         {
-            return 29.7 * Math.Pow(tipSize, 2) * Math.Sqrt((int)nozzle);
+            return (29.7 * Math.Pow(CoefficientDerivedFromTipSize(tipSize), 2) * Math.Sqrt((int) nozzle)) / 100;
         }
 
         public double CalculateFrictionLoss()
         {
-            return (hoseSize * Math.Pow(CalculateGpm() / 100, 2)) * (hoseLength / 100);
+            return CoefficientDerivedFromHoseSize(hoseSize) * Math.Pow(CalculateGpm(), 2) * (hoseLength / 100);
         }
 
         public double CalculateForAppliance()
@@ -49,30 +49,55 @@ namespace FireTruck.Models
         {
             return CalculateFrictionLoss() + CalculateForAppliance();
         }
+
+        private double CoefficientDerivedFromHoseSize(double hoseSize)
+        {
+            switch (hoseSize)
+            {
+                case 0.75:
+                    return 1100.0;
+                case 1.5:
+                    return 24.0;
+                case 1.75:
+                    return 15.5;
+                case 2.5:
+                    return 2.0;
+                case 3.0:
+                    return 0.8;
+                case 4.0:
+                    return 0.2;
+                case 5.0:
+                    return 0.08;
+                default:
+                    return 15.5;
+            }
+        }
+
+        private double CoefficientDerivedFromTipSize(double tipSize)
+        {
+            switch (tipSize)
+            {
+                case 0.88:
+                    return 0.88;
+                case 1.13:
+                    return 1.13;
+                case 1.25:
+                    return 1.25;
+                case 1.18:
+                    return 1.18;
+                case 1.0:
+                    return 1.0;
+                case 1.5:
+                    return 1.5;
+                case 1.75:
+                    return 1.75;
+                case 2.0:
+                    return 2.0;
+                default:
+                    return 0.88;
+            }
+        }
         
-    }
-
-    public struct TipSizes
-    {
-        public const double SevenEights = 0.88;
-        public const double InchAndAnEighth = 0.88;
-        public const double InchAndAQuarter = 0.8;
-        public const double InchAndThreeSixteenths = 0.18;
-        public const double OneInch = 1;
-        public const double InchAndAHalf = 1.5;
-        public const double InchAndThreeQuarter = 1.75;
-        public const double TwoInch = 2;
-    }
-
-    public struct HoseSizes
-    {
-        public const double ThreeQuarterInch = 1100;
-        public const double OneAndAHalfInch = 24;
-        public const double InchAndThreeQuarter = 15.5;
-        public const double TwoAndAHalfInch = 2;
-        public const double ThreeInch = 0.8;
-        public const double FourInch = 0.2;
-        public const double FiveInch = 0.08;
     }
 
     public enum Nozzle
@@ -81,4 +106,5 @@ namespace FireTruck.Models
         SmoothBoreMaster = 80,
         Fog = 100
     }
+    
 }
