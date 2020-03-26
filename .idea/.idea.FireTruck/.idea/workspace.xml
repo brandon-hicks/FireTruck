@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ca0ecd6-276d-424b-9798-0a15de095a72" name="Default Changelist" comment="" />
+    <list default="true" id="1ca0ecd6-276d-424b-9798-0a15de095a72" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.FireTruck/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FireTruck/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireTruck/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FireTruck/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FireTruck/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FireTruck/Controllers/FireTruckController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FireTruck/Controllers/FireTruckController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FireTruck/Models/CalculationResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FireTruck/Models/CalculationResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FireTruck/Orchestrator/FireTruckOrchestrator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FireTruck/Orchestrator/FireTruckOrchestrator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FireTruck/Orchestrator/IFireTruckOrchestrator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FireTruck/Orchestrator/IFireTruckOrchestrator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FireTruck/bin/Debug/netcoreapp3.0/FireTruck.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FireTruck/bin/Debug/netcoreapp3.0/FireTruck.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FireTruck/bin/Debug/netcoreapp3.0/FireTruck.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FireTruck/bin/Debug/netcoreapp3.0/FireTruck.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FireTruck/obj/Debug/netcoreapp3.0/FireTruck.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FireTruck/obj/Debug/netcoreapp3.0/FireTruck.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FireTruck/obj/Debug/netcoreapp3.0/FireTruck.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FireTruck/obj/Debug/netcoreapp3.0/FireTruck.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/39AD1EAB-EC41-4054-96D6-7E75046A6833/29/Math.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FireTruck/Models/UpdateCalculationRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FireTruck/Controllers/FireTruckController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FireTruck/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FireTruck/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -30,15 +46,18 @@
         <option value="$PROJECT_DIR$/FireTruck/Repositorys/IFireTruckRepository.cs" />
         <option value="$PROJECT_DIR$/FireTruck/Repositorys/FireTruckRepository.cs" />
         <option value="$PROJECT_DIR$/FireTruck/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/FireTruck/Startup.cs" />
         <option value="$PROJECT_DIR$/FireTruck/Models/CalculationResponse.cs" />
+        <option value="$PROJECT_DIR$/FireTruck/Models/UpdateCalculationResponse.cs" />
         <option value="$PROJECT_DIR$/FireTruck/Orchestrator/IFireTruckOrchestrator.cs" />
         <option value="$PROJECT_DIR$/FireTruck/Controllers/FireTruckController.cs" />
+        <option value="$PROJECT_DIR$/FireTruck/Models/UpdateCalculationRequest.cs" />
         <option value="$PROJECT_DIR$/FireTruck/Orchestrator/FireTruckOrchestrator.cs" />
-        <option value="$PROJECT_DIR$/FireTruck/Startup.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1ZXQRvuaNCNi4C9RRWt18SpEQ7o" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -47,6 +66,8 @@
   <component name="PropertiesComponent">
     <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
@@ -92,7 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584982953644</updated>
-      <workItem from="1584982955278" duration="25267000" />
+      <workItem from="1584982955278" duration="37641000" />
     </task>
     <servers />
   </component>
@@ -101,30 +122,41 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="358" key="GridCell.Tab.0.bottom" timestamp="1585188918189">
+    <state width="1398" height="358" key="GridCell.Tab.0.bottom" timestamp="1585246569624">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state width="668" height="133" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585188402153" />
-    <state width="1398" height="358" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1585188918189" />
+    <state width="1398" height="358" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1585246569624" />
     <state width="1398" height="358" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1585188669352" />
-    <state width="1398" height="358" key="GridCell.Tab.0.center" timestamp="1585188918189">
+    <state width="1398" height="358" key="GridCell.Tab.0.center" timestamp="1585246569623">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state width="668" height="133" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585188402152" />
-    <state width="1398" height="358" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1585188918189" />
+    <state width="1398" height="358" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1585246569623" />
     <state width="1398" height="358" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1585188669350" />
-    <state width="1398" height="358" key="GridCell.Tab.0.left" timestamp="1585188918188">
+    <state width="1398" height="358" key="GridCell.Tab.0.left" timestamp="1585246569623">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state width="668" height="133" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585188402151" />
-    <state width="1398" height="358" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1585188918188" />
+    <state width="1398" height="358" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1585246569623" />
     <state width="1398" height="358" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1585188669349" />
-    <state width="1398" height="358" key="GridCell.Tab.0.right" timestamp="1585188918189">
+    <state width="1398" height="358" key="GridCell.Tab.0.right" timestamp="1585246569624">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state width="668" height="133" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585188402152" />
-    <state width="1398" height="358" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1585188918189" />
+    <state width="1398" height="358" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1585246569624" />
     <state width="1398" height="358" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1585188669351" />
     <state width="668" height="303" key="GridCell.Tab.1.bottom" timestamp="1585188333912">
       <screen x="0" y="0" width="1440" height="900" />

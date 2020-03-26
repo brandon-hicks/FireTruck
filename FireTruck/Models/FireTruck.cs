@@ -17,7 +17,7 @@ namespace FireTruck.Models
         {
             hoseSize = HoseSizes.InchAndThreeQuarter;
             hoseLength = 200;
-            nozzle = Nozzle.Fog;
+            nozzle = Nozzle.SmoothBoreHand;
             appliance = false;
             pumpDischargePressure = CalculatePumpDischargePressure();
             tipSize = TipSizes.SevenEights;
@@ -73,7 +73,6 @@ namespace FireTruck.Models
         public const double ThreeInch = 0.8;
         public const double FourInch = 0.2;
         public const double FiveInch = 0.08;
-
     }
 
     public enum Nozzle

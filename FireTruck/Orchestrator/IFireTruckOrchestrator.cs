@@ -6,6 +6,7 @@ namespace FireTruck.Orchestrator
 {
     public interface IFireTruckOrchestrator
     {
-        Models.CalculationResponse GetCalculationResponse();
+        public CalculationResponse GetCalculationResponse();
+        public CalculationResponse UpdateCalculation(UpdateCalculationRequest request);
     }
 }

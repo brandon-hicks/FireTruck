@@ -15,8 +15,38 @@ namespace FireTruck.Orchestrator
 
              response.FrictionLoss = _fireTruck.CalculateFrictionLoss();
              response.PumpDischargePressure = _fireTruck.CalculatePumpDischargePressure();
+             response.HoseLength = _fireTruck.hoseLength;
+             response.HoseSize = _fireTruck.hoseSize;
+             response.TipSize = _fireTruck.tipSize;
              
              
+             return response;
+         }
+
+         public CalculationResponse UpdateCalculation(UpdateCalculationRequest request)
+         {
+             if (request.HoseLength != 0)
+             {
+                 _fireTruck.hoseLength = request.HoseLength;
+             }
+
+             if (request.HoseSize != 0)
+             {
+                 _fireTruck.hoseSize = request.HoseSize;
+             }
+
+             if (request.TipSize != 0)
+             {
+                 _fireTruck.tipSize = request.TipSize;
+             }
+             var response = new CalculationResponse();
+
+             response.FrictionLoss = _fireTruck.CalculateFrictionLoss();
+             response.PumpDischargePressure = _fireTruck.CalculatePumpDischargePressure();
+             response.HoseLength = _fireTruck.hoseLength;
+             response.HoseSize = _fireTruck.hoseSize;
+             response.TipSize = _fireTruck.tipSize;
+
              return response;
          }
      }

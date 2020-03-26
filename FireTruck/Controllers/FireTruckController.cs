@@ -28,5 +28,15 @@ namespace FireTruckController
 
             return response;
         }
+        
+        //Patch/api/UpdateCalculationRequest
+        [HttpPatch("UpdateCalculationRequest")]
+        public ActionResult<CalculationResponse> Patch([FromBody] UpdateCalculationRequest request)
+        {
+            var result =  _orchestrator.UpdateCalculation(request);;
+
+            return result;
+
+        }
     }
 }
