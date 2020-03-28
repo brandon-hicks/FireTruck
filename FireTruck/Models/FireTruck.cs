@@ -12,6 +12,8 @@ namespace FireTruck.Models
         public double pumpDischargePressure { get; set; }
         public double gallonsPerMinute { get; set; }
         public double tipSize { get; set; }
+        
+        public double gallonsPerMinuteValue { get; set; }
 
         public FireTruck()
         {
@@ -22,6 +24,7 @@ namespace FireTruck.Models
             pumpDischargePressure = CalculatePumpDischargePressure();
             tipSize = 0.88;
             gallonsPerMinute = CalculateGpm();
+            gallonsPerMinuteValue = GallonsPerMinute();
         }
 
         public double CalculatePumpDischargePressure()
@@ -32,6 +35,11 @@ namespace FireTruck.Models
         public double CalculateGpm()
         {
             return (29.7 * Math.Pow(CoefficientDerivedFromTipSize(tipSize), 2) * Math.Sqrt((int) nozzle)) / 100;
+        }
+
+        public double GallonsPerMinute()
+        {
+            return (29.7 * Math.Pow(CoefficientDerivedFromTipSize(tipSize), 2) * Math.Sqrt((int) nozzle));
         }
 
         public double CalculateFrictionLoss()

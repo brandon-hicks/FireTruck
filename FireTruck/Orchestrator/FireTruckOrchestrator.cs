@@ -13,6 +13,7 @@ namespace FireTruck.Orchestrator
          {
              var response = new CalculationResponse();
 
+             response.GallonsPerMinute = _fireTruck.GallonsPerMinute();
              response.FrictionLoss = _fireTruck.CalculateFrictionLoss();
              response.PumpDischargePressure = _fireTruck.CalculatePumpDischargePressure();
              response.HoseLength = _fireTruck.hoseLength;
@@ -41,6 +42,7 @@ namespace FireTruck.Orchestrator
              }
              var response = new CalculationResponse();
 
+             response.GallonsPerMinute = _fireTruck.GallonsPerMinute();
              response.FrictionLoss = _fireTruck.CalculateFrictionLoss();
              response.PumpDischargePressure = _fireTruck.CalculatePumpDischargePressure();
              response.HoseLength = _fireTruck.hoseLength;
