@@ -19,6 +19,7 @@ namespace FireTruck.Orchestrator
              response.HoseLength = _fireTruck.hoseLength;
              response.HoseSize = _fireTruck.hoseSize;
              response.TipSize = _fireTruck.tipSize;
+             response.NozzleType = _fireTruck.nozzle;
              
              
              return response;
@@ -40,6 +41,13 @@ namespace FireTruck.Orchestrator
              {
                  _fireTruck.tipSize = request.TipSize;
              }
+
+             if (request.NozzleType != 0)
+             {
+                 _fireTruck.nozzle = request.NozzleType;
+             }
+
+             
              var response = new CalculationResponse();
 
              response.GallonsPerMinute = _fireTruck.GallonsPerMinute();
@@ -48,6 +56,7 @@ namespace FireTruck.Orchestrator
              response.HoseLength = _fireTruck.hoseLength;
              response.HoseSize = _fireTruck.hoseSize;
              response.TipSize = _fireTruck.tipSize;
+             response.NozzleType = _fireTruck.nozzle;
 
              return response;
          }

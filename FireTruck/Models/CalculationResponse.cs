@@ -8,6 +8,7 @@ namespace FireTruck.Models
         public double TipSize { get; set; }
         public double HoseLength { get; set; }
         public double HoseSize { get; set; }
+        public Nozzle NozzleType { get; set; }
 
         public CalculationResponse()
         {
@@ -17,6 +18,7 @@ namespace FireTruck.Models
             TipSize = 0;
             HoseLength = 0;
             HoseSize = 0;
+            NozzleType = Nozzle.SmoothBoreHand;
         }
     }
 }

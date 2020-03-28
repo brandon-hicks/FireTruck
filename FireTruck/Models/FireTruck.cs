@@ -34,7 +34,7 @@ namespace FireTruck.Models
 
         public double CalculateGpm()
         {
-            return (29.7 * Math.Pow(CoefficientDerivedFromTipSize(tipSize), 2) * Math.Sqrt((int) nozzle)) / 100;
+            return (29.7 * Math.Pow(CoefficientDerivedFromTipSize(tipSize), 2) * Math.Sqrt((int) nozzle) / 100);
         }
 
         public double GallonsPerMinute()
@@ -105,7 +105,7 @@ namespace FireTruck.Models
                     return 0.88;
             }
         }
-        
+
     }
 
     public enum Nozzle
